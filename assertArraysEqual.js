@@ -18,7 +18,7 @@ const eqArrays = function(array1, array2) {
   }
 };
 
-const assertEqual = function(input1, input2) {
+const assertArraysEqual = function(input1, input2) {
   let answer = eqArrays(input1, input2)
   if (answer === true) {
     console.log(`✅✅✅ Assertion Passed: ${input1} === ${input2}`);
@@ -27,4 +27,4 @@ const assertEqual = function(input1, input2) {
   }
 };
 
-assertEqual(["one", 2, 3], ["one", 2, 3]);
+assertArraysEqual(["one", 2, 3], ["one", 2, 3]);
