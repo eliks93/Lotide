@@ -1,6 +1,7 @@
 const countLetters = function(string) {
+  const lowerString = string.toLowerCase();
   const results = {};
-  for(const letters of string) {
+  for(const letters of lowerString) {
     if (results[letters]) {
       results[letters] += 1;
     } else {
@@ -18,6 +19,12 @@ string = "Lighthouse Labs";
 
 
 result1 = countLetters(string) 
+
+assertEqual(result1["a"], 1);
+assertEqual(result1["l"], 2);
+assertEqual(result1["z"], undefined);
+assertEqual(result1[" "], undefined);
+assertEqual(result1["h"], 2);
 
 
 
