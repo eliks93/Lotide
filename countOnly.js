@@ -1,8 +1,6 @@
 const countOnly = function(allItems, itemsToCount) {
   const results = {};
-  for (const item of allItems) {
-    console.log(item);
-    
+  for (const item of allItems) {    
     if (itemsToCount[item]) {
       if (results[item] !== undefined) {
         results[item] += 1;
@@ -10,7 +8,6 @@ const countOnly = function(allItems, itemsToCount) {
         results[item] = 1;
       }
     }
-    
   }
   return results;
 };
