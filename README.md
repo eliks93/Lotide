@@ -28,7 +28,7 @@ The following functions are currently implemented:
 
 * `countLetters('string')`: counts the letters in a string
 * `countOnly(['allItems'], {itemsToCount)`: takes an array of strings and an object containing a string and boolean key value pair. returns the amount of times each specificed string in the key value pair appears in the array of strings.
-* `findKey(object, key)`: takes an object and key as input and searches the object to see if that key exists. if it does it returns the value of that key.
+* `findKey(object, key)`: takes an object and a value as input and searches the object to see if a key with that value exists. if it does it returns the key.
 * `findKeyByValue(object, value)`: takes an object and value and returns the key that has that value if it exists.
 * `tail([array])`: takes an array and returns an array containing the values of indexes after index 0.
 * `head([array])`: takes an array and returns the first index in the array.
