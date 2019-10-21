@@ -24,7 +24,7 @@ describe("#tail", () => {
   it("returns ['Lighthouse', 'Labs'] for ['Hello', 'Lighthouse', 'Labs']", () => {
     assert.deepEqual(head(["Hello", "Lighthouse", "Labs"]), ['Lighthouse', 'Labs']);
   })
-  it("returns 'undefined' for []", () => {
+  it("returns [] for []", () => {
     assert.deepEqual(head([]), []);
   })
 });
