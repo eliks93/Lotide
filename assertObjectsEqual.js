@@ -36,9 +36,11 @@ const assertObjectsEqual = function(input1, input2) {
 };
 
 const ab = { a: "1", b: "2" };
+const aObjectB = { a:"1" }
 const ba = { b: "2", a: "1" };
 const abc = { a: "1", b: "2", c: "3" };
 const cba = { c: "3", b: "2", a: "1" };
 
-assertObjectsEqual(ab, ba);
+assertObjectsEqual(ab, ba,);
 assertObjectsEqual(cba, ba);
+
