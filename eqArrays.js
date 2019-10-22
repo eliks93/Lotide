@@ -1,25 +1,15 @@
-
 const eqArrays = function(array1, array2) {
-  const index = require('./index')
-  let result = true;
-  let arrayFlat1 = index.flatten(array1);
-  let arrayFlat2 = index.flatten(array2);
-  arrayFlat1.forEach(function(value, index)  {
-    if (value !== arrayFlat2[index]) {
-      result = false;
+  let result = true; 
+  for(let i = 0;i < array1.length; i++) {
+    if (Array.isArray(array1[i])) {
+      return(eqArrays(array1[i], array2[i]))
+    } else if (array1[i] === array2[i]) {
+        result = true;
     } else {
-      result = true;
+      result = false
     }
-  });
-  return result
+  }
+  return result;
 };
 
 module.exports = eqArrays;
-
-
-
-
-
-
-
-

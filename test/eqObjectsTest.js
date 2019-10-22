@@ -71,17 +71,3 @@ describe("#eqObjects", () => {
     }), true);
   });
 }); 
-
-//   it('returns true when given two empty arrays', () => {
-//     assert.deepEqual(index.eqObjects([], []), true);
-//   });
-//   it('returns false when given two different arrays', () => {
-//     assert.deepEqual(index.eqObjects([1, 2], [3, 4]), false);
-//   });
-//   it('returns false when given two non matching arrays', () => {
-//     assert.deepEqual(index.eqObjects([1, 2, "three"], [1, 2, 3]), false);
-//   });
-//   it('returns true when given two matching nested arrays', () => {
-//     assert.deepEqual(index.eqObjects([1, [2, 3, [4]], 6], [1, [2, 3, [4]], 6]), true);
-//   });
-// });
