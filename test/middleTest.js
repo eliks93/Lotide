@@ -1,4 +1,4 @@
-const middle = require('../middle');
+const index = require('../index');
 const assert = require('chai').assert
 
 // assertArraysEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]); // should be true
@@ -8,15 +8,15 @@ const assert = require('chai').assert
 
 describe("#middle", () => {
   it("should return [4] for [1, 2, 3, 4, 5, 6, 7]", () => {
-    assert.deepEqual(middle([1, 2, 3, 4, 5, 6, 7]), [4]);
+    assert.deepEqual(index.middle([1, 2, 3, 4, 5, 6, 7]), [4]);
   });
   it("returns [3, 5] for [1, 2, 3, 5, 6, 7]", () => {
-    assert.deepEqual(middle([1, 2, 3, 5, 6, 7]), [3, 5]); 
+    assert.deepEqual(index.middle([1, 2, 3, 5, 6, 7]), [3, 5]); 
   });
   it("returns ['Lighthouse' ] for ['Hello', 'Lighthouse', 'Labs']", () => {
-    assert.deepEqual(middle(["Hello", "Lighthouse", "Labs"]), ['Lighthouse']);
+    assert.deepEqual(index.middle(["Hello", "Lighthouse", "Labs"]), ['Lighthouse']);
   })
   it("returns [] for []", () => {
-    assert.deepEqual(middle([]), []);
+    assert.deepEqual(index.middle([]), []);
   })
 });

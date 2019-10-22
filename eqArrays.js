@@ -1,15 +1,25 @@
-const assertEqual = require('./assertEqual');
 
 const eqArrays = function(array1, array2) {
-  for (let i = 0; i <= array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
+  const index = require('./index')
+  let result = true;
+  let arrayFlat1 = index.flatten(array1);
+  let arrayFlat2 = index.flatten(array2);
+  arrayFlat1.forEach(function(value, index)  {
+    if (value !== arrayFlat2[index]) {
+      result = false;
+    } else {
+      result = true;
     }
-  }
-  return true;
+  });
+  return result
 };
 
 module.exports = eqArrays;
+
+
+
+
+
 
 
 
